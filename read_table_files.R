@@ -1,3 +1,6 @@
 #reading Table Files 
-read.table(file = "sample.table")
+data1 <- read.table(file = "sample.table",header = TRUE)
+data1
+
+
 
