@@ -1,0 +1,5 @@
+library(plotrix)
+slices<- c(10,12,4,16,8)
+pct<- (slices/sum(slices)*100)
+lbls<- paste(c("US", "UK", "Australia", "Germany", "France")," ",pct,"%",sep = "" )
+pie(slices, labels = lbls, main = "Pie Chart with %", col=c(rainbow(5)))
