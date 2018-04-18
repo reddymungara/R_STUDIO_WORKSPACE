@@ -1,0 +1,5 @@
+library(rpart)
+head(kyphosis)
+fit <- rpart(Kyphosis ~ Age + Number + Start, method = "class", data = kyphosis)
+plot(fit, uniform = TRUE, main = "Decision Tree", cex = 1)
+text(fit, use.n = TRUE, all = TRUE, cex = .8)
